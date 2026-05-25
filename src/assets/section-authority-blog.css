@@ -1,0 +1,152 @@
+/* ==========================================================================
+   section-authority-blog.css
+   Authority Blog — "Expert Organizing Tips"
+   Design tokens: src/styles/design-tokens.json ("Serene Order")
+   ========================================================================== */
+
+.authority-blog {
+  --ab-primary:            #000000;
+  --ab-secondary:          #496361;
+  --ab-on-surface-variant: #45474c;
+  --ab-surface-lowest:     #ffffff;
+  --ab-font-family:        'Inter', sans-serif;
+  --ab-border-radius:      0.75rem;
+  --ab-shadow-card:        0 4px 20px rgba(0, 0, 0, 0.04);
+  --ab-shadow-card-hover:  0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* -------------------------------------------------------------------------
+   Two-column grid: image left, text right
+   ------------------------------------------------------------------------- */
+.authority-blog__grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   4rem;
+  align-items:           center;
+}
+
+/* -------------------------------------------------------------------------
+   Image column
+   ------------------------------------------------------------------------- */
+.authority-blog__media {
+  border-radius: var(--ab-border-radius);
+  overflow:      hidden;
+}
+
+.authority-blog__image {
+  width:         100%;
+  height:        auto;
+  display:       block;
+  border-radius: var(--ab-border-radius);
+  box-shadow:    var(--ab-shadow-card);
+}
+
+.authority-blog__image.placeholder-svg {
+  aspect-ratio: 4 / 5;
+  width:        100%;
+}
+
+/* -------------------------------------------------------------------------
+   Text column
+   ------------------------------------------------------------------------- */
+.authority-blog__eyebrow {
+  display:        block;
+  font-family:    var(--ab-font-family);
+  font-size:      12px;
+  font-weight:    600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--ab-secondary);
+  margin-bottom:  1rem;
+}
+
+.authority-blog__heading {
+  font-family: var(--ab-font-family);
+  color:       var(--ab-primary);
+  margin:      0 0 1.5rem;
+}
+
+.authority-blog__text {
+  font-family: var(--ab-font-family);
+  font-size:   18px;
+  font-weight: 400;
+  line-height: 28px;
+  color:       var(--ab-on-surface-variant);
+  margin:      0 0 2.5rem;
+}
+
+/* -------------------------------------------------------------------------
+   Article link cards
+   ------------------------------------------------------------------------- */
+.authority-blog__articles {
+  display:        flex;
+  flex-direction: column;
+  gap:            1.5rem;
+}
+
+.authority-blog__article-link {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             1rem;
+  padding:         1.5rem;
+  background:      var(--ab-surface-lowest);
+  border-radius:   var(--ab-border-radius);
+  text-decoration: none;
+  box-shadow:      var(--ab-shadow-card);
+  transition:      box-shadow 0.3s ease;
+}
+
+.authority-blog__article-link:hover {
+  box-shadow: var(--ab-shadow-card-hover);
+}
+
+.authority-blog__article-link:hover .authority-blog__article-arrow {
+  transform: translateX(0.5rem);
+}
+
+.authority-blog__article-title {
+  font-family:    var(--ab-font-family);
+  font-size:      14px;
+  font-weight:    500;
+  letter-spacing: 0.02em;
+  color:          var(--ab-primary);
+  margin:         0 0 0.25rem;
+}
+
+.authority-blog__article-subtitle {
+  font-family: var(--ab-font-family);
+  font-size:   12px;
+  line-height: 16px;
+  font-weight: 600;
+  color:       var(--ab-on-surface-variant);
+  margin:      0;
+}
+
+.authority-blog__article-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.authority-blog__article-arrow {
+  font-size:               1.5rem;
+  color:                   var(--ab-primary);
+  flex-shrink:             0;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  transition:              transform 0.2s ease;
+}
+
+/* -------------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------------- */
+@media screen and (max-width: 749px) {
+  .authority-blog__grid {
+    grid-template-columns: 1fr;
+    gap:                   2rem;
+  }
+
+  .authority-blog__text {
+    font-size:   16px;
+    line-height: 24px;
+  }
+}

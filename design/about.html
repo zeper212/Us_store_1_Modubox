@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | NEAT &amp; CO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#314b49",
+                        "primary-fixed": "#dce2f5",
+                        "on-primary-container": "#7d8494",
+                        "on-surface": "#191c1d",
+                        "outline-variant": "#c6c6cc",
+                        "primary": "#000000",
+                        "surface-tint": "#585e6e",
+                        "on-tertiary-container": "#818488",
+                        "tertiary-fixed-dim": "#c4c7ca",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#44474a",
+                        "on-tertiary-fixed": "#191c1f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary-fixed": "#e0e2e6",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#c0c6d8",
+                        "secondary-container": "#c8e6e2",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "background": "#f8f9fa",
+                        "secondary-fixed": "#cbe8e5",
+                        "surface": "#f8f9fa",
+                        "secondary": "#496361",
+                        "tertiary": "#000000",
+                        "surface-variant": "#e1e3e4",
+                        "on-background": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "on-secondary-container": "#4d6865",
+                        "inverse-surface": "#2e3132",
+                        "error": "#ba1a1a",
+                        "primary-container": "#151c29",
+                        "outline": "#76777c",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#c0c6d8",
+                        "on-primary-fixed": "#151c29",
+                        "secondary-fixed-dim": "#afccc9",
+                        "tertiary-container": "#191c1f",
+                        "on-primary-fixed-variant": "#404756",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#45474c",
+                        "on-secondary-fixed": "#04201e",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="stylesheet" href="about.css">
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim sticky top-0 z-50">
+<nav class="max-w-max-width mx-auto px-margin-desktop py-gutter flex justify-between items-center w-full">
+<div class="text-headline-md font-headline-md font-bold tracking-tight text-primary dark:text-primary-fixed">
+                NEAT &amp; CO
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md" href="#">Shop by Space</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md" href="#">Shop by Pain Point</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md" href="#">New Arrivals</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md" href="#">Best Sellers</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-low transition-all p-2 rounded-full">search</button>
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-low transition-all p-2 rounded-full">shopping_bag</button>
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-low transition-all p-2 rounded-full">person</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section: Our Mission -->
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%]" data-alt="A serene, high-end laundry room with perfectly organized white cabinetry and natural wood accents. The lighting is bright and airy, casting soft shadows across clear glass jars and neatly folded linen. This image captures a sense of quiet luxury and functional minimalism, using a palette of crisp whites, warm woods, and soft grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFjkWoU-yQZ-egPglT_tqa6LI0ywnYqTjhMcoO-qnTCjWI_QWSa4y4Q1eSb_lfbr1-7Oas6Sv-ke8bSONv8J91A6qCOD002tcgHrUVjQlVx_3e-VpdcDG22moo4b80FoQCz3emRlKq433I6md3NLD65iOi79y_7XYRaRDEpBvUQvScypnPf-Fy1iKC9N-ZBQY-Xr_7FBxQ_zu-iKfBD9s-4QWUGVpWzbyLVdj3kLc-gAWf7r0O9La9WKuCYZyj0We-BMf1xlwTBAw"/>
+<div class="absolute inset-0 bg-black/5"></div>
+</div>
+<div class="relative z-10 max-w-max-width mx-auto px-margin-desktop w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Order is a Feeling</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        True organization isn't just about labels and bins; it's the psychological relief that comes from a home in balance. We believe your sanctuary should work for you, not against you.
+                    </p>
+</div>
+</div>
+</section>
+<!-- The Problem & Resolve -->
+<section class="whitespace-section max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Friction of Chaos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Clutter isn't just visual noise; it's a series of micro-decisions that drain your energy before the day even begins. Searching for keys, shuffling through unorganized spices, or facing a chaotic closet adds friction to every movement.
+                    </p>
+<div class="p-8 bg-surface-container-low rounded-xl">
+<span class="font-label-md text-label-md text-secondary block mb-2">THE PHILOSOPHY</span>
+<p class="font-headline-md text-headline-md text-primary italic">"Chaos in the home creates chaos in the mind."</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Visual Resolve</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        NEAT &amp; CO transforms these friction points into moments of calm. Through curated systems and functional aesthetics, we help you transition from the stress of a messy environment to the curated peace of a sanctuary. Every product is a tool for mental clarity.
+                    </p>
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A split-screen style composition focusing on the transition from a messy, overcrowded kitchen pantry to a perfectly organized one using NEAT &amp; CO containers. The lighting is soft and consistent, emphasizing the clean lines of the storage solutions against the light gray background. The overall aesthetic is one of calm, orderly luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbGUz9SjGME767KnkIdoxcefGgWQALoulskf8bIkChLp3XQ2lAuJZTT8wAE9dZ9Aisc1FaouvoPyfLEjxG6p47nkHzccnTCUinr19ZGbgx4CkzAde_F5CFmnEXRRHujJtwseVEyI6H8cYI8FRwSvIRHWuqp8winXfF0v9mhhO085_68t_pDZBCsHgPUf3-rPzCcfL4DD4-pyi7U75JOcZfvKPeyCriH4dJGFCY-X4dgEHmKI-hJS_-gwJ8c-SxKyJv6D2pzYhCZV0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story -->
+<section class="bg-surface-container-lowest whitespace-section">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Our Origin</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">From Professional Hands to Your Home</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        NEAT &amp; CO was born in the closets of Manhattan and the pantries of London. Founded by professional organizers who saw a gap between "pretty" storage and "functional" systems, we set out to create products that solve real-world spatial problems without sacrificing the elegance of a modern home.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="space-y-4">
+<div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-primary">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Intentional Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Every dimension is calculated to fit standard cabinetry while maximizing cubic inches of storage.</p>
+</div>
+<div class="space-y-4">
+<div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-primary">brush</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Tactile Quality</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We believe organization should feel as good as it looks. Our materials are chosen for their touch and longevity.</p>
+</div>
+<div class="space-y-4">
+<div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-primary">inventory_2</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Modular Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our collections grow with you. Modular components ensure your system adapts to changing needs.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sustainability & Quality -->
+<section class="whitespace-section max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7">
+<img class="rounded-xl shadow-lg w-full aspect-[16/9] object-cover" data-alt="Detailed close-up of sustainable materials used in NEAT &amp; CO products: a smooth bamboo lid resting on top of a heavy-duty, powder-coated steel wire basket. The textures are rich and clear, showing the natural grain of the wood and the matte finish of the metal. The lighting is natural and directional, highlighting the premium quality of the craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmV4brRpTCTBE87tVmSJWifoQb9FLa0d37F9ivJ9RbX-d8IAPixkVg5nd5yRXFXmz8792hjscVQ27Ib6I6CbS8DHDYrCzGjjepwqtUZUhv3n2IiCoryk1NI0bzK9iPV1gUQTxTpeAKO3g74bpjWIPEYa5YliwA58ryuJi0bPw5QbzytT1s7HDlXMgcGgz7D_H6XbW8T6-9F3masUmwp8gTOn__TSUCX_ywIdeXVq5kyPFjGDdIwy-3jFZPIIawoUE8lPuNb8vF2xE"/>
+</div>
+<div class="lg:col-span-5 lg:pl-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Built for the Long View</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Sustainability at NEAT &amp; CO means creating products that never need replacing. We reject the cycle of disposable plastic, opting for materials that age with grace and integrity.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary pt-1">eco</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Bamboo &amp; FSC Wood</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Rapidly renewable resources treated with food-safe natural oils.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary pt-1">recycling</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary">BPA-Free Acrylic</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Ultra-clear, shatter-resistant material that is 100% recyclable.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary pt-1">precision_manufacturing</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary">Powdered Wire</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Industrial-grade steel with a non-toxic matte finish that resists corrosion.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Founder/Team Section -->
+<section class="bg-surface-container-low whitespace-section">
+<div class="max-w-max-width mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-16">Meet the Visionaries</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+<div class="group text-left">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img class="w-full h-full object-cover grayscale transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a woman in a minimalist, light-filled studio. She is wearing a structured charcoal blazer and has a calm, confident expression. The background is a soft, out-of-focus home office that feels organized and modern. The overall lighting is bright and flattering, consistent with a high-end lifestyle brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2lOh2uUz2BwBkvHyUX8JujJB8QDYZ38mXohNu2qomH4iNPBKVWO_Dp1Ixif4csQUKshf24CFUG0Jufxbg_-sPh6gVjNK9JyxBagL8UqFD3SUqXEVFSGPjrynk5MwzfWekFUz4VKS3lecVW1mD7bqt1CzSeYR87bl1hrFcS_MS670XcUCtEFyDJCJuDe9TqSYuv2g0EIw90qBlQmsM1TAIpk7kQlcoL4V3jWdacH7gyp7FLuYebYSQNXFXsjyUS0QIQHaIK-pkbwc"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Elena Vance</h3>
+<p class="font-label-md text-label-md text-secondary mb-4">Founder &amp; Creative Director</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Former architectural designer with a passion for spatial psychology and minimalist living.</p>
+</div>
+<div class="group text-left">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img class="w-full h-full object-cover grayscale transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a man in a modern design studio setting. He is dressed in a simple, high-quality white t-shirt and dark trousers, leaning against a clean white drafting table. The atmosphere is quiet and focused, with soft natural light streaming in from the side. The image represents modern professional craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1tv4-vP9b3j3f-71qvnyh7Fglu5nacS8IgUZZmZlK8PMmc1bKs3ElR-IT-VSx0usNjVuXV63HCi_uMQ1KS8syWsimdwubA0E5SOeu7fPRF3ao1P8qhlXFgzNRMeNP2q35YvqOlnRj2Bdn_wn7hob5IGAtpJGsFkTQtQfa7O_vY0qY06wfmR4AUbf6E2H07r0JY18M6x3yTT9u113Yx7FCyCa5BphoQOLGP5gT7PhoWYcH53nrLN75b0ZU28bRTfhjaJRfhOWD7vs"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Julian Thorne</h3>
+<p class="font-label-md text-label-md text-secondary mb-4">Head of Product Design</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Expert in industrial design with 15 years experience in sustainable furniture and home systems.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Press -->
+<section class="py-24 border-t border-outline-variant">
+<div class="max-w-max-width mx-auto px-margin-desktop text-center">
+<p class="font-label-md text-label-md text-on-surface-variant mb-12 tracking-widest uppercase">Featured In</p>
+<div class="flex flex-wrap justify-center items-center gap-16 md:gap-24 opacity-50 grayscale">
+<span class="font-headline-md text-headline-md font-bold italic tracking-tighter">ARCHITECTURAL DIGEST</span>
+<span class="font-headline-md text-headline-md font-extrabold tracking-tighter">VOGUE</span>
+<span class="font-headline-md text-headline-md font-serif italic">The New York Times</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tight">DWELL</span>
+<span class="font-headline-md text-headline-md font-sans font-black uppercase">Wallpaper*</span>
+</div>
+<div class="mt-20 max-w-2xl mx-auto">
+<blockquote class="font-headline-md text-headline-md text-primary leading-relaxed">
+                        "NEAT &amp; CO has managed to turn the mundane task of storage into a high-design experience. Their modular systems are the gold standard for modern organization."
+                    </blockquote>
+<cite class="block mt-6 font-label-md text-label-md text-secondary not-italic">— DESIGN ANTHOLOGY</cite>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="whitespace-section bg-primary text-on-primary">
+<div class="max-w-max-width mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-xl text-headline-xl mb-8">Begin Your Resolve</h2>
+<p class="font-body-lg text-body-lg mb-12 max-w-xl mx-auto opacity-80">
+                    Transform your home into the sanctuary you deserve. Explore our curated collections designed for every room.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-on-primary text-primary px-12 py-4 rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-all active:scale-95 h-[56px] min-w-[200px]">
+                        Shop the Collection
+                    </button>
+<button class="border border-on-primary/30 text-on-primary px-12 py-4 rounded-lg font-label-md text-label-md hover:bg-white/10 transition-all h-[56px] min-w-[200px]">
+                        View Projects
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface dark:bg-surface-dim border-t border-outline-variant dark:border-outline">
+<div class="max-w-max-width mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed mb-6">NEAT &amp; CO</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Functional Minimalism for the Modern Home.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">Shop</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">By Space</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">By Pain Point</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-primary underline" href="#">Our Story</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-80">© 2024 NEAT &amp; CO. Functional Minimalism for the Modern Home.</p>
+</div>
+</footer>
+<script>
+        // Simple micro-interactions
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.98)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'scale(1)';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'scale(1)';
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

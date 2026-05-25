@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | NEAT &amp; CO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#afccc9",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadb",
+                    "surface-tint": "#585e6e",
+                    "inverse-primary": "#c0c6d8",
+                    "tertiary-fixed": "#e0e2e6",
+                    "error": "#ba1a1a",
+                    "outline": "#76777c",
+                    "on-error": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-surface": "#2e3132",
+                    "tertiary-fixed-dim": "#c4c7ca",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c6c6cc",
+                    "secondary-container": "#c8e6e2",
+                    "on-secondary-fixed": "#04201e",
+                    "secondary": "#496361",
+                    "on-surface": "#191c1d",
+                    "tertiary-container": "#191c1f",
+                    "surface-bright": "#f8f9fa",
+                    "on-primary-fixed-variant": "#404756",
+                    "primary-fixed-dim": "#c0c6d8",
+                    "primary-container": "#151c29",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#151c29",
+                    "on-tertiary-container": "#818488",
+                    "background": "#f8f9fa",
+                    "surface-container-high": "#e7e8e9",
+                    "surface": "#f8f9fa",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed": "#cbe8e5",
+                    "primary-fixed": "#dce2f5",
+                    "on-tertiary-fixed-variant": "#44474a",
+                    "on-secondary-container": "#4d6865",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-surface-variant": "#45474c",
+                    "on-primary-container": "#7d8494",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-fixed-variant": "#314b49",
+                    "on-tertiary-fixed": "#191c1f",
+                    "tertiary": "#000000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "max-width": "1280px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="contact.css">
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant md:border-none">
+<div class="max-w-max-width mx-auto px-margin-desktop py-gutter flex justify-between items-center w-full">
+<div class="text-headline-md font-headline-md font-bold tracking-tight text-primary">NEAT &amp; CO</div>
+<div class="hidden md:flex gap-8">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shop by Space</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shop by Pain Point</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Best Sellers</a>
+</div>
+<div class="flex items-center gap-6 text-primary">
+<button class="material-symbols-outlined hover:bg-surface-container-low p-2 rounded-full transition-all">search</button>
+<button class="material-symbols-outlined hover:bg-surface-container-low p-2 rounded-full transition-all">shopping_bag</button>
+<button class="material-symbols-outlined hover:bg-surface-container-low p-2 rounded-full transition-all">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<header class="max-w-max-width mx-auto px-margin-desktop mb-24">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Support the Resolve</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our commitment to your organizational success is unwavering. We believe that true calm comes from clarity, and our support team is here to ensure your journey from chaos to order remains effortless.</p>
+</div>
+</header>
+<!-- Main Contact Grid -->
+<section class="max-w-max-width mx-auto px-margin-desktop mb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Contact Form -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-lg diffused-glow">
+<form class="flex flex-col gap-8" id="contactForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Name</label>
+<input class="bg-[#F3F4F6] border-none focus:ring-1 focus:ring-primary focus:bg-white p-4 transition-all outline-none rounded-sm" placeholder="Your full name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Email</label>
+<input class="bg-[#F3F4F6] border-none focus:ring-1 focus:ring-primary focus:bg-white p-4 transition-all outline-none rounded-sm" placeholder="email@address.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Order Number (optional)</label>
+<input class="bg-[#F3F4F6] border-none focus:ring-1 focus:ring-primary focus:bg-white p-4 transition-all outline-none rounded-sm" placeholder="#12345" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Subject</label>
+<select class="bg-[#F3F4F6] border-none focus:ring-1 focus:ring-primary focus:bg-white p-4 transition-all outline-none rounded-sm appearance-none">
+<option>Shipping Inquiry</option>
+<option>Product Question</option>
+<option>Return Request</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Message</label>
+<textarea class="bg-[#F3F4F6] border-none focus:ring-1 focus:ring-primary focus:bg-white p-4 transition-all outline-none rounded-sm resize-none" placeholder="How can we help you achieve order?" rows="6"></textarea>
+</div>
+<button class="bg-primary text-white py-5 px-10 font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition-colors self-start mt-4" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+<!-- Sidebar Details -->
+<aside class="md:col-span-5 flex flex-col gap-12 pl-0 md:pl-12">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Direct Support</h3>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="mailto:concierge@neatandco.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                                concierge@neatandco.com
+                            </a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="tel:+18005550192">
+<span class="material-symbols-outlined text-sm">call</span>
+                                +1 (800) 555-0192
+                            </a>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Office Hours</h3>
+<p class="font-body-md text-on-surface-variant">Monday — Friday</p>
+<p class="font-body-md text-on-surface-variant">9:00 AM — 6:00 PM EST</p>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">FAQ</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Common questions about shipping, assembly, and returns are answered in our help center.</p>
+<a class="font-label-md text-label-md text-primary border-b border-primary pb-1 hover:border-outline transition-all" href="#">View Help Center</a>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Mailing Address</h3>
+<p class="font-body-md text-on-surface-variant">
+                            NEAT &amp; CO Headquarters<br/>
+                            240 Functional Way, Suite 400<br/>
+                            New York, NY 10013
+                        </p>
+</div>
+</aside>
+</div>
+</section>
+<!-- Wholesale & Press -->
+<section class="bg-surface-container-low py-32 mb-32">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Wholesale &amp; Press</h2>
+<p class="font-body-md text-on-surface-variant mb-8 max-w-lg">Are you a professional organizer, interior designer, or member of the media? We offer specialized support for bulk orders and editorial features.</p>
+<div class="flex gap-6">
+<button class="border border-primary py-4 px-8 font-label-md text-label-md hover:bg-primary hover:text-white transition-all">Wholesale Inquiry</button>
+<button class="border border-primary py-4 px-8 font-label-md text-label-md hover:bg-primary hover:text-white transition-all">Press Kit</button>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-lg aspect-video diffused-glow">
+<img alt="Modern minimalist office space" class="w-full h-full object-cover" data-alt="A bright, airy modern office space featuring minimalist white desks, sleek ergonomic chairs, and wall-to-wall shelving units perfectly organized with NEAT &amp; CO storage bins. The lighting is natural and soft, streaming from large floor-to-ceiling windows, highlighting a palette of light grays, whites, and soft sage green accents. The overall atmosphere is productive, calm, and impeccably tidy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgwUoMyyWpfV27nwb0BfUTIolLGNtcGZ7rYSPWIwwalrCWbxfPBZEF4rHVlE6xkA-0qHKb-9NNmVC3bxM5DAX4WytJQHde-XgrRi4ntdFZW9eD1s8_q2QyqpljeIKKyA85lwdgFNX8sCHX8LVmQ21UhEHo1ywVAIj93fx6lnsr5th6IsG2vJrL1PHBS3nt73QCFnjTd54Wc6umgy7vgH8gD7PFmYswflm_Q91UAwzu6rPTP0zvxmoTuBnK2Qk8IOwkq_GL3umE3XY"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us Section -->
+<section class="max-w-max-width mx-auto px-margin-desktop mb-32">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12 text-center">Visit Us</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-8 h-[450px] bg-surface-container rounded-lg overflow-hidden grayscale contrast-75 diffused-glow">
+<div class="w-full h-full relative">
+<!-- Mock Map Background -->
+<div class="absolute inset-0 bg-[#e0e0e0] flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-6xl opacity-20">map</span>
+</div>
+<img alt="Map view of New York City" class="w-full h-full object-cover opacity-50 mix-blend-multiply" data-alt="A clean, minimalist grayscale map illustration of lower Manhattan. The map uses thin, precise lines and subtle shading to define streets and city blocks, emphasizing a sense of urban order and structural clarity. The lighting is flat and even, maintaining the professional light-mode aesthetic with high contrast between the dark gray water and light gray land masses." data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Wsblk2g49fS3IFbhB_SmUxITjZja7RNZoRqaNKc_qn3VSXGrhuXptVdJSJSjDLhgRE8VXtUK3sc5eGfeICZj31t2VP-sY73fi6Dsyrl0Cg6ph_uVJPajkNbKggizyK_uAU32oJwYN91czmvzvRrP0b0XhOnoU6QSzaNF20D-ipENmlvD-dA8Xix43lWbD8vXes2uW67SHbUkDIaRaelQVqfKsRp43qg8k_NTjIDdyv64z4qqVmZuiJMWVvEa3Y_uDpbI0o8KwWo"/>
+<!-- Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-lg diffused-glow">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Flagship Showroom</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Experience the touch and feel of our premium materials in person. Our design consultants are available for 1-on-1 sessions.</p>
+<div class="flex flex-col gap-4 text-on-surface-variant font-label-md">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined">location_on</span>
+<span>240 Functional Way, Suite 400<br/>SoHo, New York, NY 10013</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">directions_walk</span>
+<span>10 min from Canal St Station</span>
+</div>
+</div>
+<button class="mt-8 w-full bg-primary text-white py-4 font-label-md hover:bg-secondary transition-all">Book a Consultation</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant">
+<div class="max-w-max-width mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col gap-6">
+<div class="text-headline-md font-headline-md font-bold text-primary">NEAT &amp; CO</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-80">© 2024 NEAT &amp; CO. Functional Minimalism for the Modern Home.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider">Company</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Our Story</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider">Support</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider">Legal</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Sending...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = 'Message Sent';
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.add('bg-primary');
+                    btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+                    btn.style.opacity = '1';
+                    btn.disabled = false;
+                    e.target.reset();
+                }, 3000);
+            }, 1500);
+        });
+
+        // Add subtle hover effect for input containers
+        document.querySelectorAll('input, textarea, select').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.querySelector('label').style.color = '#000000';
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.querySelector('label').style.color = '#45474c';
+            });
+        });
+    </script>
+</body></html>

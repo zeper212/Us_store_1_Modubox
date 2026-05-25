@@ -1,0 +1,102 @@
+/* ==========================================================================
+   section-about-hero.css
+   About Hero — "Order is a Feeling"
+   Design tokens: src/styles/design-tokens.json ("Serene Order")
+   ========================================================================== */
+
+.about-hero {
+  /* Colors */
+  --ah-primary:            #000000;
+  --ah-secondary:          #496361;
+  --ah-on-surface-variant: #45474c;
+  --ah-surface-lowest:     #ffffff;
+  --ah-outline-variant:    #c6c6cc;
+
+  /* Typography */
+  --ah-font-family:          'Inter', sans-serif;
+  --ah-headline-xl-size:     48px;
+  --ah-headline-xl-weight:   700;
+  --ah-headline-xl-leading:  56px;
+  --ah-headline-xl-tracking: -0.02em;
+  --ah-body-lg-size:         18px;
+  --ah-body-lg-leading:      28px;
+  --ah-label-sm-size:        12px;
+  --ah-label-sm-weight:      600;
+  --ah-label-sm-tracking:    0.1em;
+}
+
+/* -------------------------------------------------------------------------
+   Outer container
+   ------------------------------------------------------------------------- */
+.about-hero__inner {
+  position:   relative;
+  background-color: #f8f9fa;   /* colors.background */
+  overflow:         hidden;
+}
+
+/* Background image mode */
+.about-hero__inner[style*='--about-hero-bg'] {
+  background-image:    var(--about-hero-bg);
+  background-size:     cover;
+  background-position: center;
+}
+
+.about-hero__overlay {
+  position:   absolute;
+  inset:      0;
+  background: rgba(0, 0, 0, 0.05);   /* subtle overlay */
+}
+
+/* -------------------------------------------------------------------------
+   Content
+   ------------------------------------------------------------------------- */
+.about-hero__content {
+  position:   relative;
+  z-index:    1;
+  text-align: center;
+  max-width:  720px;
+  margin:     0 auto;
+}
+
+.about-hero__eyebrow {
+  display:        block;
+  font-family:    var(--ah-font-family);
+  font-size:      var(--ah-label-sm-size);
+  font-weight:    var(--ah-label-sm-weight);
+  letter-spacing: var(--ah-label-sm-tracking);
+  text-transform: uppercase;
+  color:          var(--ah-secondary);
+  margin-bottom:  1.5rem;
+}
+
+.about-hero__heading {
+  font-family:    var(--ah-font-family);
+  font-size:      var(--ah-headline-xl-size);
+  font-weight:    var(--ah-headline-xl-weight);
+  line-height:    var(--ah-headline-xl-leading);
+  letter-spacing: var(--ah-headline-xl-tracking);
+  color:          var(--ah-primary);
+  margin:         0 0 2rem;
+}
+
+.about-hero__subheading {
+  font-family: var(--ah-font-family);
+  font-size:   var(--ah-body-lg-size);
+  line-height: var(--ah-body-lg-leading);
+  color:       var(--ah-on-surface-variant);
+  margin:      0;
+}
+
+/* -------------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------------- */
+@media screen and (max-width: 749px) {
+  .about-hero__heading {
+    font-size:   32px;
+    line-height: 40px;
+  }
+  .about-hero__subheading {
+    font-size:   16px;
+    line-height: 24px;
+  }
+}

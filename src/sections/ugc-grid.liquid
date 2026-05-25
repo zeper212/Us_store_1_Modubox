@@ -1,0 +1,183 @@
+{{ 'section-ugc-grid.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  #UgcGrid-{{ section.id }} {
+    --ugc-columns: {{ section.settings.columns_desktop }};
+  }
+{%- endstyle -%}
+
+<div class="ugc-grid color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+
+    <div class="ugc-grid__header">
+      {%- unless section.settings.title == blank -%}
+        <h2 class="ugc-grid__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+      {%- endunless -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="ugc-grid__subtitle">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+
+    <ul
+      class="ugc-grid__list"
+      id="UgcGrid-{{ section.id }}"
+      role="list"
+    >
+      {%- for block in section.blocks -%}
+        <li
+          class="ugc-grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {{ block.shopify_attributes }}
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          <div class="ugc-grid__media">
+            {%- if block.settings.image != blank -%}
+              {{
+                block.settings.image
+                | image_url: width: 600
+                | image_tag:
+                  loading: 'lazy',
+                  class: 'ugc-grid__image',
+                  alt: block.settings.alt_text | escape
+              }}
+            {%- else -%}
+              {{
+                'lifestyle-1'
+                | placeholder_svg_tag: 'ugc-grid__image placeholder-svg'
+              }}
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- if section.settings.hashtag != blank -%}
+      <p class="ugc-grid__hashtag">{{ section.settings.hashtag }}</p>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "UGC Grid",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Organized by You"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Real homes, real transformations. Share your NEAT & CO space using #NeatAndCo for a chance to be featured."
+    },
+    {
+      "type": "text",
+      "id": "hashtag",
+      "label": "Hashtag display",
+      "default": "#NeatAndCo"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "label": "Columns on desktop"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ugc_item",
+      "name": "Photo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "UGC Grid",
+      "blocks": [
+        { "type": "ugc_item" },
+        { "type": "ugc_item" },
+        { "type": "ugc_item" },
+        { "type": "ugc_item" }
+      ]
+    }
+  ]
+}
+{% endschema %}

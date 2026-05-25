@@ -1,0 +1,280 @@
+{
+  "$schema": "stitch/design-tokens/v1",
+  "meta": {
+    "project": "PureSpace Home Organization",
+    "projectId": "9192816914388149079",
+    "designSystem": "Serene Order",
+    "designSystemId": "assets/7e8e4f59e2c64344bb1950ba424075f3",
+    "colorMode": "LIGHT",
+    "deviceType": "DESKTOP",
+    "lastUpdated": "2026-05-25T05:03:23.274800Z",
+    "source": "Stitch (stitch.googleapis.com)"
+  },
+
+  "brand": {
+    "philosophy": "Functional Minimalism",
+    "aesthetic": "whitespace-first",
+    "targetAudience": "Premium, frictionless shopping experience — reduces clutter of traditional e-commerce",
+    "mood": "Calm, controlled, intentional, quiet, highly efficient"
+  },
+
+  "theme": {
+    "colorMode": "LIGHT",
+    "roundness": "ROUND_EIGHT",
+    "spacingScale": 2,
+    "fonts": {
+      "headline": "Inter",
+      "body": "Inter",
+      "label": "Inter"
+    }
+  },
+
+  "colors": {
+    "primary": "#000000",
+    "on-primary": "#ffffff",
+    "primary-container": "#151c29",
+    "on-primary-container": "#7d8494",
+    "primary-fixed": "#dce2f5",
+    "primary-fixed-dim": "#c0c6d8",
+    "on-primary-fixed": "#151c29",
+    "on-primary-fixed-variant": "#404756",
+    "inverse-primary": "#c0c6d8",
+
+    "secondary": "#496361",
+    "on-secondary": "#ffffff",
+    "secondary-container": "#c8e6e2",
+    "on-secondary-container": "#4d6865",
+    "secondary-fixed": "#cbe8e5",
+    "secondary-fixed-dim": "#afccc9",
+    "on-secondary-fixed": "#04201e",
+    "on-secondary-fixed-variant": "#314b49",
+
+    "tertiary": "#000000",
+    "on-tertiary": "#ffffff",
+    "tertiary-container": "#191c1f",
+    "on-tertiary-container": "#818488",
+    "tertiary-fixed": "#e0e2e6",
+    "tertiary-fixed-dim": "#c4c7ca",
+    "on-tertiary-fixed": "#191c1f",
+    "on-tertiary-fixed-variant": "#44474a",
+
+    "error": "#ba1a1a",
+    "on-error": "#ffffff",
+    "error-container": "#ffdad6",
+    "on-error-container": "#93000a",
+
+    "background": "#f8f9fa",
+    "on-background": "#191c1d",
+
+    "surface": "#f8f9fa",
+    "surface-dim": "#d9dadb",
+    "surface-bright": "#f8f9fa",
+    "surface-container-lowest": "#ffffff",
+    "surface-container-low": "#f3f4f5",
+    "surface-container": "#edeeef",
+    "surface-container-high": "#e7e8e9",
+    "surface-container-highest": "#e1e3e4",
+    "surface-variant": "#e1e3e4",
+    "surface-tint": "#585e6e",
+
+    "on-surface": "#191c1d",
+    "on-surface-variant": "#45474c",
+    "inverse-surface": "#2e3132",
+    "inverse-on-surface": "#f0f1f2",
+
+    "outline": "#76777c",
+    "outline-variant": "#c6c6cc",
+
+    "override": {
+      "primary": "#121926",
+      "secondary": "#8aa6a3",
+      "tertiary": "#e5e7eb",
+      "neutral": "#f9fafb"
+    },
+
+    "semantic": {
+      "deepCharcoal": "#121926",
+      "softSage": "#8aa6a3",
+      "offWhite": "#f9fafb",
+      "lightGray": "#f3f4f5",
+      "pureWhite": "#ffffff"
+    }
+  },
+
+  "typography": {
+    "headline-xl": {
+      "fontFamily": "Inter",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": "56px",
+      "letterSpacing": "-0.02em",
+      "usage": "Editorial hero moments — magazine-style headlines"
+    },
+    "headline-lg": {
+      "fontFamily": "Inter",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "lineHeight": "40px",
+      "letterSpacing": "-0.01em",
+      "usage": "Section headings (desktop)"
+    },
+    "headline-lg-mobile": {
+      "fontFamily": "Inter",
+      "fontSize": "28px",
+      "fontWeight": "600",
+      "lineHeight": "36px",
+      "usage": "Section headings (mobile)"
+    },
+    "headline-md": {
+      "fontFamily": "Inter",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "32px",
+      "usage": "Sub-section headings"
+    },
+    "body-lg": {
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "usage": "Primary body copy"
+    },
+    "body-md": {
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "usage": "Secondary body copy"
+    },
+    "label-md": {
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": "0.02em",
+      "usage": "Labels, navigation, tags"
+    },
+    "label-sm": {
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "16px",
+      "usage": "Utility text, captions, badges"
+    }
+  },
+
+  "spacing": {
+    "base": "8px",
+    "gutter": "24px",
+    "margin-mobile": "16px",
+    "margin-desktop": "64px",
+    "max-width": "1280px",
+    "section-padding-min": "64px"
+  },
+
+  "borderRadius": {
+    "sm": "0.25rem",
+    "DEFAULT": "0.5rem",
+    "md": "0.75rem",
+    "lg": "1rem",
+    "xl": "1.5rem",
+    "full": "9999px",
+    "usage": {
+      "tags-chips": "full",
+      "buttons-inputs": "DEFAULT",
+      "cards-containers": "lg"
+    }
+  },
+
+  "elevation": {
+    "level0": {
+      "description": "Base — off-white background",
+      "background": "#f8f9fa",
+      "shadow": "none"
+    },
+    "level1": {
+      "description": "Cards — pure white with subtle ambient shadow",
+      "background": "#ffffff",
+      "shadow": "0 4px 20px rgba(0, 0, 0, 0.04)"
+    },
+    "level2": {
+      "description": "Modals / Dropdowns — pure white with deeper ambient shadow",
+      "background": "#ffffff",
+      "shadow": "0 12px 40px rgba(0, 0, 0, 0.08)"
+    }
+  },
+
+  "layout": {
+    "grid": {
+      "desktop": {
+        "columns": 12,
+        "maxWidth": "1280px",
+        "gutter": "24px",
+        "margin": "64px"
+      },
+      "mobile": {
+        "columns": 4,
+        "fluid": true,
+        "margin": "16px"
+      }
+    }
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "minHeight": "56px",
+        "background": "#121926",
+        "color": "#ffffff",
+        "borderRadius": "0.5rem",
+        "hoverBackground": "#1e2a3a",
+        "note": "Hover = subtle shift to lighter navy, never a bright color"
+      },
+      "secondary": {
+        "background": "transparent",
+        "border": "1px solid #121926",
+        "color": "#121926",
+        "borderRadius": "0.5rem"
+      }
+    },
+    "input": {
+      "default": {
+        "background": "#f3f4f5",
+        "border": "none",
+        "borderRadius": "0.5rem"
+      },
+      "focus": {
+        "background": "#ffffff",
+        "border": "1px solid #121926"
+      }
+    },
+    "card": {
+      "background": "#ffffff",
+      "border": "none",
+      "borderRadius": "1rem",
+      "padding": "24px",
+      "shadow": "none",
+      "hoverShadow": "0 4px 20px rgba(0, 0, 0, 0.04)",
+      "imageAspectRatio": "4/5 or 1/1",
+      "note": "No border — use shadow on hover only"
+    },
+    "chip": {
+      "borderRadius": "9999px",
+      "inactive": {
+        "background": "rgba(138, 166, 163, 0.10)",
+        "color": "#496361"
+      },
+      "active": {
+        "background": "#8aa6a3",
+        "color": "#ffffff"
+      }
+    },
+    "beforeAfterToggle": {
+      "type": "custom",
+      "description": "Horizontal slider — swipe between Cluttered and Organized state",
+      "note": "Brand-unique component. Use high-contrast lifestyle photography."
+    }
+  },
+
+  "designMd": "---\nname: Serene Order\ncolors:\n  surface: '#f8f9fa'\n  surface-dim: '#d9dadb'\n  surface-bright: '#f8f9fa'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f3f4f5'\n  surface-container: '#edeeef'\n  surface-container-high: '#e7e8e9'\n  surface-container-highest: '#e1e3e4'\n  on-surface: '#191c1d'\n  on-surface-variant: '#45474c'\n  inverse-surface: '#2e3132'\n  inverse-on-surface: '#f0f1f2'\n  outline: '#76777c'\n  outline-variant: '#c6c6cc'\n  surface-tint: '#585e6e'\n  primary: '#000000'\n  on-primary: '#ffffff'\n  primary-container: '#151c29'\n  on-primary-container: '#7d8494'\n  inverse-primary: '#c0c6d8'\n  secondary: '#496361'\n  on-secondary: '#ffffff'\n  secondary-container: '#c8e6e2'\n  on-secondary-container: '#4d6865'\n  tertiary: '#000000'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#191c1f'\n  on-tertiary-container: '#818488'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#dce2f5'\n  primary-fixed-dim: '#c0c6d8'\n  on-primary-fixed: '#151c29'\n  on-primary-fixed-variant: '#404756'\n  secondary-fixed: '#cbe8e5'\n  secondary-fixed-dim: '#afccc9'\n  on-secondary-fixed: '#04201e'\n  on-secondary-fixed-variant: '#314b49'\n  tertiary-fixed: '#e0e2e6'\n  tertiary-fixed-dim: '#c4c7ca'\n  on-tertiary-fixed: '#191c1f'\n  on-tertiary-fixed-variant: '#44474a'\n  background: '#f8f9fa'\n  on-background: '#191c1d'\n  surface-variant: '#e1e3e4'\ntypography:\n  headline-xl:\n    fontFamily: Inter\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Inter\n    fontSize: 28px\n    fontWeight: '600'\n    lineHeight: 36px\n  headline-md:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: 20px\n    letterSpacing: 0.02em\n  label-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 8px\n  gutter: 24px\n  margin-mobile: 16px\n  margin-desktop: 64px\n  max-width: 1280px\n---"
+}

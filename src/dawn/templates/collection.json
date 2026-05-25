@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product_grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "lookbook": {
+      "type": "collection-lookbook",
+      "blocks": {
+        "look_1": {
+          "type": "lookbook_item",
+          "settings": {
+            "product_title": "Total Clarity Set",
+            "product_price": "$72.00",
+            "tag_text": "Best Seller"
+          }
+        },
+        "look_2": {
+          "type": "lookbook_item",
+          "settings": {
+            "product_title": "Pantry Starter Kit",
+            "product_price": "$48.00",
+            "tag_text": "New"
+          }
+        },
+        "look_3": {
+          "type": "lookbook_item",
+          "settings": {
+            "product_title": "Fridge Edition",
+            "product_price": "$56.00"
+          }
+        },
+        "look_4": {
+          "type": "lookbook_item",
+          "settings": {
+            "product_title": "The Office Set",
+            "product_price": "$64.00"
+          }
+        }
+      },
+      "block_order": ["look_1", "look_2", "look_3", "look_4"],
+      "settings": {
+        "eyebrow": "Curated Sets",
+        "title": "Shop the Look",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product_grid",
+    "lookbook"
+  ]
+}

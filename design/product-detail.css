@@ -1,0 +1,8 @@
+/* product-detail.css — NEAT & CO | PureSpace Home Organization */
+/* Serene Order design-tokens.json 참고 */
+
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .active-thumb { border: 2px solid black; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); }

@@ -1,0 +1,272 @@
+{
+  "sections": {
+    "hero": {
+      "type": "about-hero",
+      "settings": {
+        "eyebrow": "Our Story",
+        "heading": "Order is a Feeling",
+        "subheading": "We believe that a home in order is not an aesthetic — it is a state of mind. At NEAT & CO, we engineer calm into every corner.",
+        "color_scheme": "scheme-1",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "story_chaos": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Friction of Chaos",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We've all felt it: the creeping dread of a space that works against you. A pantry that hides things. A closet that avalanches. A desk that swallows your focus. Disorganization isn't just ugly — it costs you time, patience, and mental clarity every single day.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "image_behavior": "none",
+        "image_position": "left",
+        "desktop_image_width": "medium",
+        "height": "medium",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "story_resolve": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Visual Resolve",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A clear bin, a labeled drawer, a system that holds — these aren't luxuries. They are acts of self-respect. Our products are built around the insight that when you can see what you own, you take better care of it, waste less, and live with more intention.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "image_behavior": "none",
+        "image_position": "right",
+        "desktop_image_width": "medium",
+        "height": "medium",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "values": {
+      "type": "about-values",
+      "blocks": {
+        "val_1": {
+          "type": "value_item",
+          "settings": {
+            "icon_name": "design_services",
+            "title": "Intentional Design",
+            "text": "Every product is engineered around a specific friction point in the home, not aesthetics alone."
+          }
+        },
+        "val_2": {
+          "type": "value_item",
+          "settings": {
+            "icon_name": "texture",
+            "title": "Tactile Quality",
+            "text": "We source materials that feel premium in the hand. BPA-free acrylic, solid bamboo, and food-grade stainless steel."
+          }
+        },
+        "val_3": {
+          "type": "value_item",
+          "settings": {
+            "icon_name": "view_module",
+            "title": "Modular Systems",
+            "text": "Our products are designed to work together. Start with one piece and scale your system as your home evolves."
+          }
+        }
+      },
+      "block_order": ["val_1", "val_2", "val_3"],
+      "settings": {
+        "eyebrow": "Our Philosophy",
+        "heading": "From Professional Hands to Your Home",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "commitment": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built for the Long View",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We don't make products that need to be replaced. We make products that outlast trends, survive moves, and adapt as your life changes. Our commitment to quality means a NEAT & CO system bought today will still be the backbone of your home organization a decade from now.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Products",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_alignment": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "materials": {
+      "type": "about-values",
+      "blocks": {
+        "mat_bamboo": {
+          "type": "value_item",
+          "settings": {
+            "icon_name": "eco",
+            "title": "Bamboo & FSC Wood",
+            "text": "Renewable, durable hardwood sourced from certified forests. Naturally antimicrobial and built to outlast trends."
+          }
+        },
+        "mat_acrylic": {
+          "type": "value_item",
+          "settings": {
+            "icon_name": "water_drop",
+            "title": "BPA-Free Acrylic",
+            "text": "Crystal-clear, food-safe acrylic that resists yellowing and shattering. Built for long-term pantry and fridge use."
+          }
+        },
+        "mat_wire": {
+          "type": "value_item",
+          "settings": {
+            "icon_name": "settings_input_component",
+            "title": "Powdered Wire",
+            "text": "Electrostatically coated wire that resists rust and wipes clean in seconds. Rated for humidity-heavy environments."
+          }
+        }
+      },
+      "block_order": ["mat_bamboo", "mat_acrylic", "mat_wire"],
+      "settings": {
+        "eyebrow": "Our Materials",
+        "heading": "Built to Last, Responsibly Sourced",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "press": {
+      "type": "rich-text",
+      "blocks": {
+        "eyebrow": {
+          "type": "heading",
+          "settings": {
+            "heading": "Featured In",
+            "heading_size": "h3"
+          }
+        },
+        "outlets": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ARCHITECTURAL DIGEST &nbsp;·&nbsp; VOGUE &nbsp;·&nbsp; The New York Times &nbsp;·&nbsp; DWELL &nbsp;·&nbsp; Wallpaper*</strong></p><p><em>\"NEAT &amp; CO has managed to turn the mundane task of organizing a home into an act of genuine self-expression.\"</em></p>"
+          }
+        }
+      },
+      "block_order": ["eyebrow", "outlets"],
+      "settings": {
+        "desktop_content_alignment": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "team": {
+      "type": "about-team",
+      "blocks": {
+        "member_1": {
+          "type": "team_member",
+          "settings": {
+            "name": "Elena Vance",
+            "role": "Co-Founder & Head of Design",
+            "bio": "A former interior architect with 12 years of studio experience, Elena built NEAT & CO to bring the discipline of professional space-planning into everyday homes."
+          }
+        },
+        "member_2": {
+          "type": "team_member",
+          "settings": {
+            "name": "Julian Thorne",
+            "role": "Head of Product Design",
+            "bio": "Expert in industrial design with 15 years of experience in sustainable furniture and home systems, Julian leads the material and form development of every NEAT & CO product."
+          }
+        },
+        "member_3": {
+          "type": "team_member",
+          "settings": {
+            "name": "Priya Desai",
+            "role": "Head of Customer Experience",
+            "bio": "Priya leads the support and community team, ensuring every customer interaction reflects the calm, intentional values of the NEAT & CO brand."
+          }
+        }
+      },
+      "block_order": ["member_1", "member_2", "member_3"],
+      "settings": {
+        "heading": "Meet the Visionaries",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "story_chaos",
+    "story_resolve",
+    "values",
+    "commitment",
+    "materials",
+    "team",
+    "press"
+  ]
+}

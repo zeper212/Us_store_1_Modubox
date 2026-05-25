@@ -1,0 +1,131 @@
+/* ==========================================================================
+   section-about-team.css
+   About Team — "Meet the Visionaries"
+   Design tokens: src/styles/design-tokens.json ("Serene Order")
+   ========================================================================== */
+
+.about-team {
+  /* Colors */
+  --at-primary:            #000000;
+  --at-secondary:          #496361;
+  --at-on-surface-variant: #45474c;
+  --at-surface-lowest:     #ffffff;
+  --at-surface-container:  #edeeef;
+  --at-primary-fixed:      #dce2f5;
+
+  /* Typography */
+  --at-font-family:          'Inter', sans-serif;
+  --at-headline-md-size:     24px;
+  --at-headline-md-weight:   600;
+  --at-headline-md-leading:  32px;
+  --at-label-md-size:        14px;
+  --at-label-md-weight:      500;
+  --at-label-sm-size:        12px;
+  --at-label-sm-weight:      600;
+  --at-label-sm-tracking:    0.1em;
+  --at-body-md-size:         16px;
+  --at-body-md-leading:      24px;
+
+  /* Shape */
+  --at-border-radius:        0.75rem;
+
+  /* Elevation */
+  --at-shadow-card:          0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* -------------------------------------------------------------------------
+   Header
+   ------------------------------------------------------------------------- */
+.about-team__header {
+  text-align:    center;
+  margin-bottom: 4rem;
+}
+
+.about-team__heading {
+  font-family: var(--at-font-family);
+  color:       var(--at-primary);
+  margin:      0 0 1rem;
+}
+
+.about-team__description {
+  font-family: var(--at-font-family);
+  font-size:   var(--at-body-md-size);
+  line-height: var(--at-body-md-leading);
+  color:       var(--at-on-surface-variant);
+  max-width:   560px;
+  margin:      0 auto;
+}
+
+/* -------------------------------------------------------------------------
+   Card
+   ------------------------------------------------------------------------- */
+.about-team__card {
+  text-align:     center;
+  height:         100%;
+}
+
+/* Avatar */
+.about-team__avatar {
+  width:         160px;
+  height:        160px;
+  border-radius: 9999px;
+  overflow:      hidden;
+  margin:        0 auto 1.5rem;
+  background:    var(--at-surface-container);
+}
+
+.about-team__photo {
+  width:      100%;
+  height:     100%;
+  object-fit: cover;
+  display:    block;
+}
+
+.about-team__avatar-placeholder {
+  width:           100%;
+  height:          100%;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  font-family:     var(--at-font-family);
+  font-size:       3rem;
+  font-weight:     700;
+  color:           var(--at-primary);
+  background:      var(--at-primary-fixed);
+}
+
+/* Info */
+.about-team__name {
+  font-family: var(--at-font-family);
+  font-size:   var(--at-headline-md-size);
+  font-weight: var(--at-headline-md-weight);
+  line-height: var(--at-headline-md-leading);
+  color:       var(--at-primary);
+  margin:      0 0 0.25rem;
+}
+
+.about-team__role {
+  font-family:    var(--at-font-family);
+  font-size:      var(--at-label-sm-size);
+  font-weight:    var(--at-label-sm-weight);
+  letter-spacing: var(--at-label-sm-tracking);
+  text-transform: uppercase;
+  color:          var(--at-secondary);
+  margin:         0 0 1rem;
+}
+
+.about-team__bio {
+  font-family: var(--at-font-family);
+  font-size:   var(--at-body-md-size);
+  line-height: var(--at-body-md-leading);
+  color:       var(--at-on-surface-variant);
+  margin:      0;
+}
+
+/* -------------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------------- */
+@media screen and (max-width: 749px) {
+  .about-team__header { margin-bottom: 2rem; }
+  .about-team__avatar { width: 120px; height: 120px; }
+}

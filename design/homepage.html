@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEAT &amp; CO | Functional Minimalism for the Modern Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#404756",
+                        "on-primary-fixed": "#151c29",
+                        "secondary-fixed-dim": "#afccc9",
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#314b49",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#000000",
+                        "outline": "#76777c",
+                        "on-background": "#191c1d",
+                        "surface-tint": "#585e6e",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-primary": "#c0c6d8",
+                        "secondary-container": "#c8e6e2",
+                        "on-tertiary-fixed": "#191c1f",
+                        "on-secondary-container": "#4d6865",
+                        "secondary": "#496361",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed-variant": "#44474a",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-fixed": "#04201e",
+                        "primary-fixed-dim": "#c0c6d8",
+                        "primary-container": "#151c29",
+                        "tertiary-container": "#191c1f",
+                        "outline-variant": "#c6c6cc",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#818488",
+                        "on-primary-container": "#7d8494",
+                        "secondary-fixed": "#cbe8e5",
+                        "primary-fixed": "#dce2f5",
+                        "tertiary-fixed": "#e0e2e6",
+                        "on-surface-variant": "#45474c",
+                        "inverse-surface": "#2e3132",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "tertiary-fixed-dim": "#c4c7ca"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<link rel="stylesheet" href="homepage.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container">
+<!-- Announcement Bar -->
+<div class="bg-primary text-on-primary py-2 text-center overflow-hidden">
+<p class="font-label-sm text-label-sm tracking-widest uppercase">
+            Transform Your Space: Free Shipping on Orders Over $75
+        </p>
+</div>
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-dim">
+<nav class="max-w-max-width mx-auto px-margin-desktop py-gutter flex justify-between items-center w-full">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-primary dark:text-primary-fixed" href="/">
+                NEAT &amp; CO
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1" href="#">Shop by Space</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">Shop by Pain Point</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">Best Sellers</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-6">
+<button class="hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section: Before & After Split Screen -->
+<section class="relative h-[870px] w-full bg-surface-container-lowest overflow-hidden">
+<!-- Container for the two images -->
+<div class="relative w-full h-full flex" id="hero-slider-container" style="--reveal-percent: 50%;">
+<!-- The Resolve (Right Side / Background) -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="The Resolve" class="w-full h-full object-cover" data-alt="A perfectly organized, luxury kitchen pantry featuring clear acrylic storage bins, uniform glass jars with minimalist labels, and pristine white shelving. The lighting is bright, airy, and high-key, emphasizing a clean and serene aesthetic. The palette is dominated by whites, light woods, and transparent textures, evoking a sense of calm and functional minimalism. Professional architectural photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh_KUzX1x4nzBrwqJcouJJIIySTEIUBFrupx1su2IuiBCf-Dz3M2NfEyCyRsb8-MSPODSwSIE0eTleDiu68GzR4ikmEkG9xaK3TIZrNAc_MTkmJJ2XgqmswjsgdAURTNQYkImUZ3-_sn3Rn5eOz6AY7DSc0mJsxBe7IeXFU_HXo4Qb7XGWQSjt_HAFcORzPybiz5x28QAZM-uM7WlK_pYhvBMGczL2O5pyKEvCKQjyzg66iPaZcDnpjvGxWbNyqaCrtUeISlccsps"/>
+<div class="absolute bottom-12 right-12 text-white bg-black/20 backdrop-blur-md px-6 py-3 rounded-lg pointer-events-none">
+<span class="font-label-md uppercase tracking-widest">The Resolve</span>
+</div>
+</div>
+<!-- The Chaos (Left Side / Overlay) -->
+<div class="absolute inset-0 w-full h-full overflow-hidden" style="width: var(--reveal-percent);">
+<img alt="The Chaos" class="absolute inset-0 w-screen h-full object-cover grayscale-[0.3]" data-alt="A cluttered and disorganized kitchen pantry filled with mismatched cardboard boxes, open snack bags, and tangled items. The lighting is slightly warmer and less focused than the after shot, creating a realistic sense of daily disarray. The composition shows the overwhelming nature of a space without structural organization, using a naturalistic and crowded visual style. Professional lifestyle photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzlqIdRWHDt_o6p7AD7TbNl8bM7joQLXlbWrXCzFD1pz7pVjirMBPBN0zk0uNxBQO3hzpP3-o5Y_PKsb2mTrPeH1QVkDp1WFkCDUsKZ_PX8_mGaEVJ5UJ-pJiEeMmGBeIvpD-eFDMNfvjEQcg8zv1As37Sc80Pew3yixINMRUdnGb5r3eaGxFxjt9kqtHVQjoxmM5mY1spidtjkyWXiDHpTHSxRsXxvireZEU17EPZSKW7QY2n9_vDOYfAzXLYodOJl3rhWk71TEo"/>
+<div class="absolute bottom-12 left-12 text-white bg-black/40 backdrop-blur-md px-6 py-3 rounded-lg pointer-events-none">
+<span class="font-label-md uppercase tracking-widest">The Chaos</span>
+</div>
+</div>
+<!-- Slider Handle -->
+<div class="absolute top-0 bottom-0 left-[var(--reveal-percent)] w-1 bg-white cursor-ew-resize z-20 shadow-xl group" id="slider-handle" style="transform: translateX(-50%);">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-primary">unfold_more</span>
+</div>
+</div>
+<!-- Range Input Overlay (Functional Layer) -->
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30" max="100" min="0" oninput="this.parentElement.style.setProperty('--reveal-percent', this.value + '%')" type="range" value="50"/>
+</div>
+<!-- Hero Headline Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center w-full px-margin-mobile pointer-events-none">
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm p-12 inline-block rounded-xl shadow-2xl pointer-events-auto max-w-2xl border border-outline-variant/30">
+<h1 class="font-headline-xl text-headline-xl mb-6 text-primary">The Joy of a Home in Order</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg mx-auto">
+                        Functional minimalism meets premium craftsmanship. Rediscover your home with NEAT &amp; CO's curated storage solutions.
+                    </p>
+<a class="inline-flex items-center justify-center min-h-[56px] px-10 bg-primary text-on-primary font-label-md text-label-md rounded-full hover:bg-on-primary-fixed-variant transition-colors active:scale-95 uppercase tracking-widest" href="#">
+                        Shop the Solution
+                    </a>
+</div>
+</div>
+</section>
+<!-- Problem Grid Section -->
+<section class="max-w-max-width mx-auto px-margin-desktop py-32 text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-16">What's Holding You Back?</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Problem Item 1 -->
+<div class="p-12 bg-white rounded-xl soft-shadow transition-all duration-300 hover:-translate-y-2">
+<div class="w-16 h-16 bg-secondary-container/30 text-secondary rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl" data-icon="kitchen">kitchen</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Cluttered Pantry</h3>
+<p class="text-on-surface-variant leading-relaxed">Stop digging through expired goods. Our modular bins create visibility and accessibility for every ingredient.</p>
+</div>
+<!-- Problem Item 2 -->
+<div class="p-12 bg-white rounded-xl soft-shadow transition-all duration-300 hover:-translate-y-2">
+<div class="w-16 h-16 bg-secondary-container/30 text-secondary rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl" data-icon="dry_cleaning">dry_cleaning</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Cramped Closets</h3>
+<p class="text-on-surface-variant leading-relaxed">Maximize vertical space and streamline your morning routine with slimline hangers and drawer dividers.</p>
+</div>
+<!-- Problem Item 3 -->
+<div class="p-12 bg-white rounded-xl soft-shadow transition-all duration-300 hover:-translate-y-2">
+<div class="w-16 h-16 bg-secondary-container/30 text-secondary rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-4xl" data-icon="settings_input_component">settings_input_component</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Tangled Cords</h3>
+<p class="text-on-surface-variant leading-relaxed">Eliminate visual noise at your desk with sleek cable management boxes that hide the mess while keeping power close.</p>
+</div>
+</div>
+</section>
+<!-- Category Carousel (Shop by Space) -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-2">Collections</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Shop by Space</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-all active:scale-95">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-all active:scale-95">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-gutter pb-8 no-scrollbar snap-x snap-mandatory">
+<!-- Pantry -->
+<div class="min-w-[300px] md:min-w-[400px] group snap-start cursor-pointer">
+<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden mb-6 relative">
+<img alt="Pantry" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a modern kitchen pantry shelf showcasing clear acrylic storage containers neatly filled with pasta, grains, and snacks. The lighting is soft and natural, emphasizing the transparency of the materials and the meticulous arrangement. The color palette consists of neutral tones and warm cereal colors, set against a pristine white background for a high-end, organized look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrQNZottun-xSEtozxJz_l4gQFpjIizG5GaLzysUtewCO8wTmNODqJ8lsEVgMrDeKQT_b1kAWlbiMvOg0eknxeeIU3T1CUiZxUGnM_mB5NVtagVYH8jAo6hWi4IH1UFbKmOmuGA1E9yQ74VT5I5_y4HF7PkCkcCrfY7-O5eQEYhq1_b4mUaU03jrKwyACh0-7njZnYq6ecOxftFwVXhtTf-5CMPPf8prbfH5kqFJDVththzor824y_Tq0oolwXHe9VsD9TRq1fbNc"/>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary group-hover:underline underline-offset-4 decoration-1">Pantry</h4>
+<p class="text-label-md text-on-surface-variant">24 Products</p>
+</div>
+<!-- Kitchen -->
+<div class="min-w-[300px] md:min-w-[400px] group snap-start cursor-pointer">
+<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden mb-6 relative">
+<img alt="Kitchen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A bright and airy kitchen island with perfectly organized utensil drawers visible. The styling uses light wood organizers and matte black hardware, creating a sophisticated contrast. Soft morning light flows through a window, highlighting the dust-free surfaces and high-end finishes. The aesthetic is ultra-clean, minimalist, and functionally superior, reflecting premium home lifestyle photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDItpkWAEtQRByHgirpw0q7JUL0xRs7_MnvOYs_QXeHv9wIim5kK_R1qI3mXVV0mfGGzdfo20M1eArN9x_lA13LTtnJ7neM3N8dPtoLoq_d678qQuBfZRKENIShpZDWVNdq1T60VMZqtTqqTaNcBj9Y61luwQrdX2dsla87YJjKleqZmpexA7NtF-UgR928-rAbnz7f8-EieL6oYt5ROsBFuiD3MBzjfA1lNW9tXgauuGk16hNev8OGBSBm98VNcsvyUsppHEOEr5M"/>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary group-hover:underline underline-offset-4 decoration-1">Kitchen</h4>
+<p class="text-label-md text-on-surface-variant">18 Products</p>
+</div>
+<!-- Closet -->
+<div class="min-w-[300px] md:min-w-[400px] group snap-start cursor-pointer">
+<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden mb-6 relative">
+<img alt="Closet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A walk-in closet with an impeccable arrangement of clothing in a neutral color palette. Velvet hangers in matching grey hold shirts perfectly spaced, while shelving above displays uniform storage boxes in soft linen textures. The lighting is integrated into the shelving, creating a glowing, boutique-like atmosphere. The mood is tranquil, sophisticated, and highly structured, emphasizing luxury and order." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByh4Rj-43mGKhDkLswl-5SI-UKkFe_25x6iQGgzZQJnsfTVppdx3aSxJQ5lH8fBXiJlsbcRO3jS-otYtrI_mOBpa3-W96QrmSV0w6CsBb87MEbrYgCMu8dz32w7WoiCLcgw9Wl3qNZIdXJcAV6QH8WYtTUyhDOH6NyuyH9FJ6TqrICM07BEw07uFjU9rfU1ZfP1mIuPt8yjMxiKv_UHlw0xDLAyQuIfGP70CG7n7IOsHahH1fND4jvr0qtbyZ4TIY7rNCzsf3BzoQ"/>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary group-hover:underline underline-offset-4 decoration-1">Closet</h4>
+<p class="text-label-md text-on-surface-variant">32 Products</p>
+</div>
+<!-- Office -->
+<div class="min-w-[300px] md:min-w-[400px] group snap-start cursor-pointer">
+<div class="aspect-[4/5] bg-white rounded-lg overflow-hidden mb-6 relative">
+<img alt="Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist home office workspace featuring a white desk, a single laptop, and a curated set of desktop organizers in soft sage green and matte grey. The background is a clean white wall with a single piece of framed minimalist line art. The scene is bathed in cool, even daylight, creating a productive and calm environment free from clutter. High-end lifestyle professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFuGa-1CuhfwxQEXuo_kEX79CdEYjAqwRy73FtbINvI46dEcyS549-EAWS76jyFc31HsQzNvC8PoILsUlivlTgiHwm2cE_13qQLNE07dDIU8ILGu-n_e2wLn6QXSmo4t2zi-VvYoxpCUAtUwrExlBIYUrynfCB0boeBIjkSAfjxZ1A20YHFFhHkrCj4Iba0qiKm0MdoPy1-vPdgJQxB2bhY7khDJEpZ-0cPYuzyH09RQjvkhBb9ovxZ3lIpbtLoIH1v4_M-L3qv70"/>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary group-hover:underline underline-offset-4 decoration-1">Office</h4>
+<p class="text-label-md text-on-surface-variant">12 Products</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof: Organized by You -->
+<section class="max-w-max-width mx-auto px-margin-desktop py-32">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Organized by You</h2>
+<p class="text-on-surface-variant max-w-lg mx-auto font-body-md">Real homes, real transformations. Share your NEAT &amp; CO space using #NeatAndCo for a chance to be featured.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img alt="UGC 1" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-75" data-alt="A user-submitted photo of a perfectly color-coordinated bookshelf where books are arranged in a gradient of colors. The setting is a cozy living room with soft lighting and a minimalist side chair. The shot has an authentic, lived-in yet exceptionally tidy quality, captured in a warm and inviting lifestyle photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO4HI7mFqRVEJ9ChH7pPxnx3o013yslaVHyWNYAEp5e9eD4un8ZdZdgX4a5YSUsNlc2UL_dUaIU9wUPFPRbvwV-QfFZ5xyP79s4RasYbe9hQ4Csvf7yb0p244_cvmnM939n3Nt_fv0bV5Zez1NC4bKcN0KGb5pm9S-56bcNKVlCmetKkftMGYF4G7NGdusw_otoe4vPAdrobVM5vPhjJCkrDA_HIfdTSD6XsucUT8uaQ_6d1zStTD5bYiVWNjb7Wi2yK7Lr4ihBGw"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img alt="UGC 2" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-75" data-alt="A customer-submitted image showing a laundry room with stacked white machines and an overhead shelf containing uniform wicker baskets and glass soap dispensers. The overall look is clean and efficient, with a palette of crisp whites and natural wood tones. Soft daylight highlights the orderly arrangement, showcasing a functional and beautiful utilitarian space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeJZ3iST9Rv6elUgLbzUcT1wMT-_5twjHd2-VwKFFMZYa7ovkCJpeG2IrQmCHpMfxyE5jtygNKWLR3wHbhrGXY4gfFOUnSSUdPJ-FtmITxI3slfanDDJF3cLpAjZSn-UxdN2O7n281dxgtJGJHgXxl7Z_naLiv_2Qxh2BCErZwWgzp-nNaUMQUjZ52uE5SjohpAihVjsGVYG5mLss9A30kxTqgBLHmhg0ifjC9b1UtTQx1njhWRmkmM8vxQ7zj3U-dJ4kVEOjHxrY"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img alt="UGC 3" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-75" data-alt="A top-down view of an organized vanity drawer featuring clear acrylic dividers that separate makeup and skincare products with precision. The aesthetic is luxurious and clean, with the products' high-end packaging adding a touch of elegance. The lighting is bright and even, emphasizing the clarity of the storage solutions and the perfectly tidy arrangement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm_MI5hHcNRRrH6XP6TJMelc1Weqho4JUnsIJupXGLlhxqUxqBfXjUVGIDhy58NERp47QbJV9bMr-Yui4wt2nLVZ941p-nPB1fxaxTA-5ohtDrzrGDQIsyF3TU4iyol_HPaIRmv2vf3o9ejqN5FXsDXKLA3nyzr0SPThh-0t9ydWpsdKBWUHxkoSFYgV_qqCjP2fSFqFnUdCxHXHA8jRhaN_d4-Ywv0TNJH9m64HJuewsAvitEJils0HdHVL3us6P5X6VFng97b3A"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img alt="UGC 4" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-75" data-alt="A bedroom nightstand featuring a single designer lamp, a curated book stack, and a small ceramic tray for jewelry. The scene is impeccably tidy, reflecting a mindful approach to home decor. The lighting is low-key and moody, suggesting a peaceful evening atmosphere in a modern, minimalist home. The photo is high-contrast and aesthetically focused on quiet, functional beauty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmV7HGej5Z-IL1PtW7wU0t6DdfPJR8WIQWEwD40-E3bwGmjEd-9MBFvi-8z4SNdtQed59Y-cXduG6QX8yrAR0zLwGCMbmKPEKAqyZksYSH_Gf_EPindrJ3fNwjM5bxU4_YQVWwiKwrv9vsSHQs4K0waxXpjjnHL-dzjTHba6RU0Trb0Sh5IyaHjGW_DURU1OYf7Ths7RoFVoDSLtPYXwf8FxvlSh6DjlEIlwYESoBpzM63-S8LREPEl76d4e3kSQPKJhec2vQheNY"/>
+</div>
+</div>
+</section>
+<!-- Authority Module: Expert Organizing Tips -->
+<section class="bg-surface-container-highest/30 py-32">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2">
+<img alt="Expert Tips" class="w-full rounded-2xl soft-shadow" data-alt="A wide, bright entryway of a modern home featuring a white built-in bench with storage underneath, perfectly arranged pillows, and a small wooden console table with a minimalist vase. The lighting is expansive and welcoming, coming from an unseen front door. The scene represents professional home staging with a focus on functional beauty and the 'entryway edition' of home organization." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXOQ_dztuDn-pPSSJprcEPTVM3y2wIddY5WpRnC_d4bcXx5M95eOH59am6BWXsSk2WXtKRuiLvXc4Z_INzrw72Qzpj885zIier1c5HvkZUeX93Od1HhBJX5wSeTycruTr1KIRxtMQw0JiNlfT34NBY1wcW7DNlNn4cGurwp_BDg3SgkHylkoKqevQKslzaFserbohh6BRkNON00_606gZC-M3TzdUO6Qr1Gi0q4ooGkHLF9wEbaIhOEONTq1N7MVyFnJ4loTW23qY"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-4">Expert Organizing Tips</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">5 Minutes to a Better Morning: Entryway Edition</h2>
+<p class="text-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                            The entryway is the gatekeeper of your home's energy. Discover three simple habits to eliminate 'drop-zones' and start every day with clarity.
+                        </p>
+<div class="flex flex-col gap-6">
+<a class="group flex items-center justify-between p-6 bg-white rounded-xl diffused-glow transition-all" href="#">
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">The Hanger Rule</h4>
+<p class="text-label-sm text-on-surface-variant">Why matching hangers are your best closet investment.</p>
+</div>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between p-6 bg-white rounded-xl diffused-glow transition-all" href="#">
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">Decanting 101</h4>
+<p class="text-label-sm text-on-surface-variant">A guide to which dry goods belong in glass containers.</p>
+</div>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface dark:bg-surface-dim border-t border-outline-variant dark:border-outline mt-20">
+<div class="max-w-max-width mx-auto px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed mb-6 block" href="/">
+                    NEAT &amp; CO
+                </a>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container mb-6 max-w-xs">
+                    © 2024 NEAT &amp; CO. Functional Minimalism for the Modern Home.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">public</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">photo_camera</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">mail</span>
+</div>
+</div>
+<!-- Links Columns -->
+<div>
+<h5 class="font-label-md text-label-md text-primary font-bold mb-6">About</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Our Story</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Press</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary font-bold mb-6">Support</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Wholesale</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary font-bold mb-6">Legal</h5>
+<ul class="flex flex-col gap-4">
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<!-- Scripts for Micro-interactions -->
+<script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize Slider Interactions
+        const slider = document.querySelector('input[type="range"]');
+        const container = document.getElementById('hero-slider-container');
+        
+        if (slider && container) {
+            slider.addEventListener('input', (e) => {
+                container.style.setProperty('--reveal-percent', e.target.value + '%');
+            });
+        }
+    </script>
+</body></html>

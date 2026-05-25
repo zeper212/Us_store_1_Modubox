@@ -1,0 +1,26 @@
+/* Homepage - NEAT & CO | PureSpace Home Organization */
+/* Source: Stitch design system "Serene Order" — src/styles/design-tokens.json 참고 */
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .before-after-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 4px;
+            height: 100vh;
+            background: #000;
+            cursor: ew-resize;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .reveal-overlay {
+            clip-path: inset(0 0 0 var(--reveal-percent));
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
+        }
+        .diffused-glow:hover {
+            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.08);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
