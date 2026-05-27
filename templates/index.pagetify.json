@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "before_after_hero": {
+      "type": "before-after-hero",
+      "settings": {
+        "before_label": "The Chaos",
+        "after_label": "The Resolve",
+        "hero_height": 700,
+        "heading": "The Joy of a Home in Order",
+        "subheading": "Functional minimalism meets premium craftsmanship. Rediscover your home with NEAT & CO's curated storage solutions.",
+        "button_label": "Shop the Solution",
+        "button_link": "shopify:\/\/collections\/all",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "problem_grid": {
+      "type": "problem-grid",
+      "blocks": {
+        "problem_pantry": {
+          "type": "problem_item",
+          "settings": {
+            "icon_name": "kitchen",
+            "title": "Cluttered Pantry",
+            "text": "Stop digging through expired goods. Our modular bins create visibility and accessibility for every ingredient."
+          }
+        },
+        "problem_closet": {
+          "type": "problem_item",
+          "settings": {
+            "icon_name": "dry_cleaning",
+            "title": "Cramped Closets",
+            "text": "Maximize vertical space and streamline your morning routine with slimline hangers and drawer dividers."
+          }
+        },
+        "problem_cords": {
+          "type": "problem_item",
+          "settings": {
+            "icon_name": "settings_input_component",
+            "title": "Tangled Cords",
+            "text": "Eliminate visual noise at your desk with sleek cable management boxes that hide the mess while keeping power close."
+          }
+        }
+      },
+      "block_order": [
+        "problem_pantry",
+        "problem_closet",
+        "problem_cords"
+      ],
+      "settings": {
+        "title": "What's Holding You Back?",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection_carousel": {
+      "type": "collection-carousel",
+      "blocks": {
+        "col_pantry": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pantry"
+          }
+        },
+        "col_kitchen": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "kitchen"
+          }
+        },
+        "col_closet": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "closet"
+          }
+        },
+        "col_office": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "office"
+          }
+        }
+      },
+      "block_order": [
+        "col_pantry",
+        "col_kitchen",
+        "col_closet",
+        "col_office"
+      ],
+      "settings": {
+        "eyebrow": "Collections",
+        "title": "Shop by Space",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "ugc_grid": {
+      "type": "ugc-grid",
+      "blocks": {
+        "ugc_1": {
+          "type": "ugc_item",
+          "settings": {
+            "alt_text": "Color-coordinated bookshelf by @neatandco"
+          }
+        },
+        "ugc_2": {
+          "type": "ugc_item",
+          "settings": {
+            "alt_text": "Organized laundry room by @neatandco"
+          }
+        },
+        "ugc_3": {
+          "type": "ugc_item",
+          "settings": {
+            "alt_text": "Vanity drawer with acrylic dividers"
+          }
+        },
+        "ugc_4": {
+          "type": "ugc_item",
+          "settings": {
+            "alt_text": "Minimalist bedroom nightstand"
+          }
+        }
+      },
+      "block_order": [
+        "ugc_1",
+        "ugc_2",
+        "ugc_3",
+        "ugc_4"
+      ],
+      "settings": {
+        "title": "Organized by You",
+        "heading_size": "h1",
+        "subtitle": "Real homes, real transformations. Share your NEAT & CO space using #NeatAndCo for a chance to be featured.",
+        "hashtag": "#NeatAndCo",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "authority_blog": {
+      "type": "authority-blog",
+      "blocks": {
+        "article_hanger": {
+          "type": "article_link",
+          "settings": {
+            "title": "The Hanger Rule",
+            "subtitle": "Why matching hangers are your best closet investment.",
+            "link": "shopify:\/\/blogs\/journal\/the-hanger-rule"
+          }
+        },
+        "article_decanting": {
+          "type": "article_link",
+          "settings": {
+            "title": "Decanting 101",
+            "subtitle": "A guide to which dry goods belong in glass containers.",
+            "link": "shopify:\/\/blogs\/journal\/decanting-101"
+          }
+        }
+      },
+      "block_order": [
+        "article_hanger",
+        "article_decanting"
+      ],
+      "settings": {
+        "eyebrow": "Expert Organizing Tips",
+        "heading": "5 Minutes to a Better Morning: Entryway Edition",
+        "heading_size": "h1",
+        "text": "The entryway is the gatekeeper of your home’s energy. Discover three simple habits to eliminate ‘drop-zones’ and start every day with clarity.",
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "before_after_hero",
+    "problem_grid",
+    "collection_carousel",
+    "ugc_grid",
+    "authority_blog"
+  ]
+}
