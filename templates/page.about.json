@@ -1,5 +1,63 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "image_banner_XzYDJV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_GCLNWn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story",
+            "heading_size": "h1"
+          }
+        },
+        "text_bkkh3a": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_qP6QJy": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GCLNWn",
+        "text_bkkh3a",
+        "buttons_qP6QJy"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "hero": {
       "type": "about-hero",
       "settings": {
@@ -29,17 +87,21 @@
           }
         }
       },
-      "block_order": ["heading", "text"],
+      "block_order": [
+        "heading",
+        "text"
+      ],
       "settings": {
-        "image_behavior": "none",
-        "image_position": "left",
-        "desktop_image_width": "medium",
         "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-2",
         "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -62,17 +124,21 @@
           }
         }
       },
-      "block_order": ["heading", "text"],
+      "block_order": [
+        "heading",
+        "text"
+      ],
       "settings": {
-        "image_behavior": "none",
-        "image_position": "right",
-        "desktop_image_width": "medium",
         "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-1",
         "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -105,11 +171,16 @@
           }
         }
       },
-      "block_order": ["val_1", "val_2", "val_3"],
+      "block_order": [
+        "val_1",
+        "val_2",
+        "val_3"
+      ],
       "settings": {
         "eyebrow": "Our Philosophy",
         "heading": "From Professional Hands to Your Home",
         "heading_size": "h1",
+        "description": "",
         "columns_desktop": 3,
         "color_scheme": "scheme-2",
         "padding_top": 60,
@@ -144,9 +215,13 @@
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-1",
         "full_width": false,
@@ -182,40 +257,18 @@
           }
         }
       },
-      "block_order": ["mat_bamboo", "mat_acrylic", "mat_wire"],
+      "block_order": [
+        "mat_bamboo",
+        "mat_acrylic",
+        "mat_wire"
+      ],
       "settings": {
         "eyebrow": "Our Materials",
         "heading": "Built to Last, Responsibly Sourced",
         "heading_size": "h1",
+        "description": "",
         "columns_desktop": 3,
         "color_scheme": "scheme-2",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "press": {
-      "type": "rich-text",
-      "blocks": {
-        "eyebrow": {
-          "type": "heading",
-          "settings": {
-            "heading": "Featured In",
-            "heading_size": "h3"
-          }
-        },
-        "outlets": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>ARCHITECTURAL DIGEST &nbsp;·&nbsp; VOGUE &nbsp;·&nbsp; The New York Times &nbsp;·&nbsp; DWELL &nbsp;·&nbsp; Wallpaper*</strong></p><p><em>\"NEAT &amp; CO has managed to turn the mundane task of organizing a home into an act of genuine self-expression.\"</em></p>"
-          }
-        }
-      },
-      "block_order": ["eyebrow", "outlets"],
-      "settings": {
-        "desktop_content_alignment": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": false,
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -248,18 +301,54 @@
           }
         }
       },
-      "block_order": ["member_1", "member_2", "member_3"],
+      "block_order": [
+        "member_1",
+        "member_2",
+        "member_3"
+      ],
       "settings": {
         "heading": "Meet the Visionaries",
         "heading_size": "h1",
+        "description": "",
         "columns_desktop": 3,
         "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "press": {
+      "type": "rich-text",
+      "blocks": {
+        "eyebrow": {
+          "type": "heading",
+          "settings": {
+            "heading": "Featured In",
+            "heading_size": "h3"
+          }
+        },
+        "outlets": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ARCHITECTURAL DIGEST &nbsp;·&nbsp; VOGUE &nbsp;·&nbsp; The New York Times &nbsp;·&nbsp; DWELL &nbsp;·&nbsp; Wallpaper*</strong></p><p><em>\"NEAT &amp; CO has managed to turn the mundane task of organizing a home into an act of genuine self-expression.\"</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "outlets"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
         "padding_top": 60,
         "padding_bottom": 60
       }
     }
   },
   "order": [
+    "image_banner_XzYDJV",
     "hero",
     "story_chaos",
     "story_resolve",
