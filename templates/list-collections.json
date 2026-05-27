@@ -9,8 +9,21 @@
  */
 {
   "sections": {
+    "about_hero_RGyNTd": {
+      "type": "about-hero",
+      "name": "About Hero",
+      "settings": {
+        "eyebrow": "COLLECTIONS",
+        "heading": "Shop by Space",
+        "subheading": "We believe that a home in order is not an aesthetic — it is a state of mind. At NEAT & CO, we engineer calm into every corner.",
+        "color_scheme": "",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "sort": "alphabetical",
@@ -18,9 +31,165 @@
         "columns_desktop": 3,
         "columns_mobile": "2"
       }
+    },
+    "collection_lookbook_zYT9yC": {
+      "type": "collection-lookbook",
+      "blocks": {
+        "lookbook_item_ghFQRJ": {
+          "type": "lookbook_item",
+          "settings": {
+            "product": "",
+            "product_title": "Total Clarity Set",
+            "product_price": "$72.00",
+            "product_subtitle": "",
+            "tag_text": "Best Seller"
+          }
+        },
+        "lookbook_item_ndbt4e": {
+          "type": "lookbook_item",
+          "settings": {
+            "product": "",
+            "product_title": "Pantry Starter Kit",
+            "product_price": "$48.00",
+            "product_subtitle": "",
+            "tag_text": "New"
+          }
+        },
+        "lookbook_item_dgYyA4": {
+          "type": "lookbook_item",
+          "settings": {
+            "product": "",
+            "product_title": "Fridge Edition",
+            "product_price": "$56.00",
+            "product_subtitle": "",
+            "tag_text": "Best Seller"
+          }
+        },
+        "lookbook_item_3qDYwz": {
+          "type": "lookbook_item",
+          "settings": {
+            "product": "",
+            "product_title": "The Office Set",
+            "product_price": "$64.00",
+            "product_subtitle": "",
+            "tag_text": "Best Seller"
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_item_ghFQRJ",
+        "lookbook_item_ndbt4e",
+        "lookbook_item_dgYyA4",
+        "lookbook_item_3qDYwz"
+      ],
+      "name": "Collection Lookbook",
+      "settings": {
+        "eyebrow": "Curated Sets",
+        "title": "Shop the Look",
+        "heading_size": "h1",
+        "description": "",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection_carousel_pzHKA3": {
+      "type": "collection-carousel",
+      "blocks": {
+        "collection_item_6kP7nw": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "can-organizers",
+            "custom_title": ""
+          }
+        },
+        "collection_item_Bc6FJ4": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "cable-clips-ties",
+            "custom_title": ""
+          }
+        },
+        "collection_item_LMxNay": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "custom_title": ""
+          }
+        },
+        "collection_item_U9Gegw": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "custom_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_6kP7nw",
+        "collection_item_Bc6FJ4",
+        "collection_item_LMxNay",
+        "collection_item_U9Gegw"
+      ],
+      "name": "Collection Carousel",
+      "settings": {
+        "eyebrow": "Collections",
+        "title": "KITCHEN",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection_list_9N9XjY": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_3dTFQJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cable-clips-ties"
+          }
+        },
+        "featured_collection_h6HVVF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "garage-pegboards"
+          }
+        },
+        "featured_collection_QUxNKT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "countertop-trays"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_3dTFQJ",
+        "featured_collection_h6HVVF",
+        "featured_collection_QUxNKT"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "about_hero_RGyNTd",
+    "main",
+    "collection_lookbook_zYT9yC",
+    "collection_carousel_pzHKA3",
+    "collection_list_9N9XjY"
   ]
 }
